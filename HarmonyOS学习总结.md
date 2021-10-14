@@ -115,7 +115,6 @@ HarmonyOS设备认证和互信，是基于华为账号系统的。
 
 * 官网资料
 1. https://device.harmonyos.com/cn/docs/start/learn/overview-features-0000001157881877
-2. 
 
 ## HarmonyOS生态 
 * 
