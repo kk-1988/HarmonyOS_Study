@@ -112,10 +112,28 @@ HarmonyOS设备认证和互信，是基于华为账号系统的。
 1. 此处说的不是北向应用开发，是南向设备开发
 2. HarmonyOS从源码结构，软件工具，业务流程等方面会提供支撑，让设备商弹性部署HarmonyOS
 3. 理解统一OS弹性部署的含义即可  
+4. 实现弹性部署，我们需要：
+> a.硬件的形态和需求  
+> b.硬件的资源情况和功能需求  
+> c.根据编译链关系  
 
 * 官网资料
 1. https://device.harmonyos.com/cn/docs/start/learn/overview-features-0000001157881877
 
 ## HarmonyOS生态 
-* 
-* 
+* 共建圈
+1. 先行者计划
+2. 闭门会议
+3. codelab 
+4. hackthon
+5. meet up
+6. work shop
+7. 总裁面对面
+
+* 学习圈
+1. 直播
+2. 评测
+3. 课程培训
+4. 技术专家
+5. 文档资料
+6. 技术文章
