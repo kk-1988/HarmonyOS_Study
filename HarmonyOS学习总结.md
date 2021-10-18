@@ -143,5 +143,31 @@ HarmonyOS设备认证和互信，是基于华为账号系统的。
 ## 设备开发入门
 1. 环境搭建和新项目创建过程
 * 
+* 
+* 
+
 2. OpenHarmony的目录结构，CMSIS和POSIX的概念
+* OpenHarmony的整体目录结构如下图：  
+![OpenHarmony的目录结构](./OpenHarmony目录结构.png) 
+> 共有16个1级目录文件夹  
+* applications 主要存放用户的应用程序
+* base目录是HarmonyOS Framework的基础能力集合，定位了大多数设备开发需要的能力模块
+* build 组建化编译和构建
+* developtools 开发工具
+* device 设备相关文件
+* docs 说明文档
+* domains 增强软件服务子系统
+* drivers 驱动
+* foundation 系统基础能力
+* kernel 内核子系统
+* out 编译输出件
+* prebuilts 编译器及工具子系统
+* test 测试子系统
+* third_party 开源第三方组件
+* untils目录作为公共基础库，存放通用的基础组件
+* vendor 厂商提供的软件
+> 
+* 
+*   
+
 3. 了解组件开发概念并熟悉包管理工具HPM的使用
