@@ -165,9 +165,16 @@ HarmonyOS设备认证和互信，是基于华为账号系统的。
 * test 测试子系统
 * third_party 开源第三方组件
 * untils目录作为公共基础库，存放通用的基础组件
-* vendor 厂商提供的软件
-> 
-* 
-*   
+* vendor 厂商提供的软件  
+
+> CMSIS和POSIX的介绍(OS kernel和应用程序之间的接口)
+* CMSIS接口  
+1. Cortex Microcontroller Software Interface Standard
+2. ARM专为Cortex-M系列单片机设计的为控制软件接口标准
+3. CMSIS有多个分支，鸿蒙用的主要是
+
+* POSIX接口
+1. 
+2. 
 
 3. 了解组件开发概念并熟悉包管理工具HPM的使用
