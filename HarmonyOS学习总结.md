@@ -235,4 +235,6 @@ init->ready->running->zombies
 2. 线程1：  
 init->ready->running->ready->running->exit
 3. 线程2:  
-init->ready->running->exit
+init->ready->running->exit  
+4. HarmonyOS采用2种方式来高效管理线程：任务池和就绪队列
+5. 
