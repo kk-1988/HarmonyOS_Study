@@ -226,3 +226,13 @@ init->ready->running->zombies
 > 进程防冲突(锁)
 1. 多核CPU进程防冲突用自旋锁(自旋锁是阻塞式的设计，不会睡眠)
 2. 
+
+> 负载均衡
+1. 负载均衡为了提升效率，为了让多个CPU核心之间尽量平均分配
+
+> 线程状态迁移
+1. 在同一个进程，在线程1的执行过程中，优先级更高的线程2插队执行
+2. 线程1：  
+init->ready->running->ready->running->exit
+3. 线程2:  
+init->ready->running->exit
