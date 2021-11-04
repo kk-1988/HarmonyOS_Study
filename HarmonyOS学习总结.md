@@ -249,6 +249,17 @@ init->ready->running->exit
 3. 如果是同一个优先级的多个任务ready，则有两种策略:fifo(SCHED_FIFO)和时间片(SCHED_RR，时间片默认是10ms)  
 
 > HarmonyOS线程常用的锁机制
-1. 
-2. 
-3. 
+1. 互斥锁
+* 未得到资源的线程将不会占用CPU资源
+* 多核上面采用自旋锁来保护资源
+* 
+2. 读写锁(共享-独占锁)
+* sample1
+![读写锁](./rw_lock.png) 
+
+## HarmonyOS的内存管理
+1. liteos-m 没有mmu
+2. liteos-a 存在mmu
+3. HarmonyOS内存分为四个区域：代码区，静态区，堆区，栈区
+4. HarmonyOS将内存分为用户空间和内核虚拟空间，通过MMU对虚拟内存进行管理调度
+5. 
