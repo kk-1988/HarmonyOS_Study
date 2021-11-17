@@ -343,4 +343,5 @@ init->ready->running->exit
 2. SPI：
 3. SDIO：
 4. WATCHDOG：
-5. 
+5. ADC: 模数转换，它的过程经过：采样，量化，编码三个过程
+6. 
