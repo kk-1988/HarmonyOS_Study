@@ -463,6 +463,15 @@ Service类型的Ability(SA)：不带界面，为用古提供后台任务机制�
 3. 
 
 > Shell调测系统
-1. Shell添加方法
-2. 
-3. 
+1. Shell注意事项：
+* Shell功能支持Shell命令、文件名和目录名的Tab键联想补全
+* Shell端工作目录与系统工作目录是分开的，通过cd，pwd等命令是Shell端工作目录进行操作，通过chdir，getcwd等命令是对系统工作目录进行操作。两个工作目录之间没有联系。
+* 在使用网络Shell指令前，需要先调用tcpip_init函数完成网络初始化并完成telnet连接后才能起作用，内核默认不初始化tcpip_init。
+* 不建议使用Shell命令对/dev目录下的设备文件进行操作。  
+
+2. Shell编成实现 
+* 引入头文件"shell.h"和"shcmd.h"
+* 注册命令(分为静态注册和动态注册)
+> 静态注册：宏的原型SHELLCMD_ENTRY(l,cmdType,cmdKey,paraNum,cmdHook)
+> 动态注册：函数原型UINT32 osCmdReg(CmdType cmdTYpe, CHAR *cmdKey, UINT32 paraNUm, CmdCallBackFUnc cmdProc)
+* 添加内置命令函数原型
